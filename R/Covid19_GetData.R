@@ -156,7 +156,7 @@ Data$Cn_Pr = paste(Data$Province_State, Data$Country, sep = ", ")
 Data[which(Data$Province_State == "" ),'Cn_Pr']= Data[which(Data$Province_State == "" ),'Country']
 
 
-
+OData <- Data
 
 #FROM OUTLIERS
 removeOutliers <- function(D, CnP, Col, Date){

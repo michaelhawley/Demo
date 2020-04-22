@@ -1,0 +1,111 @@
+﻿Country,State,Code,Pop,Source
+China,Anhui,,62550000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Beijing,,21710000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Chongqing,,30750000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Fujian,,39110000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Gansu,,26260000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Guangdong,,111690000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Guangxi,,48850000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Guizhou,,35550000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Hainan,,9170000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Hebei,,75200000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Heilongjiang,,37890000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Henan,,95590000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Hong Kong,,7335384,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Hubei,,59020000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Hunan,,68600000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Inner Mongolia,,25290000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Jiangsu,,80290000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Jiangxi,,46220000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Jilin,,27170000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Liaoning,,43690000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Macau,,644900,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Ningxia,,6820000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Qinghai,,5980000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Shaanxi,,36820000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Shandong,,100060000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Shanghai,,24180000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Shanxi,,38350000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Sichuan,,83020000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Tianjin,,15570000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Tibet,,3370000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Xinjiang,,24450000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Yunnan,,48010000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+China,Zhejiang,,56570000,https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population
+Canada,Alberta,AB,4067175,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,British Columbia,BC,4648055,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Manitoba,MB,1278365,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,New Brunswick,NB,747101,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Newfoundland and Labrador,NL,519716,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Northwest Territories,NT,41786,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Nova Scotia,NS,923598,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Ontario,ON,13448494,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Prince Edward Island,PE,142907,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Quebec,QC,8164361,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Saskatchewan,SK,1098352,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada,Yukon,YT,35874,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Canada, Nunavut,NU,35944,https://en.wikipedia.org/wiki/Population_of_Canada_by_province_and_territory
+Australia,Australian Capital Territory,ACT,426709,https://en.wikipedia.org/wiki/States_and_territories_of_Australia
+Australia,New South Wales,NSW,8089526,https://en.wikipedia.org/wiki/States_and_territories_of_Australia
+Australia,Northern Territory,NT,245869,https://en.wikipedia.org/wiki/States_and_territories_of_Australia
+Australia,Queensland,QLD,5095100,https://en.wikipedia.org/wiki/States_and_territories_of_Australia
+Australia,South Australia,SA,1751693,https://en.wikipedia.org/wiki/States_and_territories_of_Australia
+Australia,Tasmania,TAS,534281,https://en.wikipedia.org/wiki/States_and_territories_of_Australia
+Australia,Victoria,VIC,6594804,https://en.wikipedia.org/wiki/States_and_territories_of_Australia
+Australia,Western Australia,WA,2621680,
+United States,California,CA,39512223,
+United States,Texas,TX,28995881,
+United States,Florida,FL,21477737,
+United States,New York,NY,19453561,
+United States,Pennsylvania,PA,12801989,
+United States,Illinois,IL,12671821,
+United States,Ohio,OH,11689100,
+United States,Georgia,GA,10617423,
+United States,North Carolina,NC,10488084,
+United States,Michigan,MI,9986857,
+United States,New Jersey,NJ,8882190,
+United States,Virginia,VA,8535519,
+United States,Washington,WA,7614893,
+United States,Arizona,AZ,7278717,
+United States,Massachusetts,MA,6949503,
+United States,Tennessee,TN,6833174,
+United States,Indiana,IN,6732219,
+United States,Missouri,MO,6137428,
+United States,Maryland,MD,6045680,
+United States,Wisconsin,WI,5822434,
+United States,Colorado,CO,5758736,
+United States,Minnesota,MN,5639632,
+United States,South Carolina,SC,5148714,
+United States,Alabama,AL,4903185,
+United States,Louisiana,LA,4648794,
+United States,Kentucky,KY,4467673,
+United States,Oregon,OR,4217737,
+United States,Oklahoma,OK,3956971,
+United States,Connecticut,CT,3565287,
+United States,Utah,UT,3205958,
+United States,Puerto Rico,PR,3193694,
+United States,Iowa,IA,3155070,
+United States,Nevada,NV,3080156,
+United States,Arkansas,AR,3017825,
+United States,Mississippi,MS,2976149,
+United States,Kansas,KS,2913314,
+United States,New Mexico,NM,2096829,
+United States,Nebraska,NE,1934408,
+United States,West Virginia,WV,1792147,
+United States,Idaho,ID,1787065,
+United States,Hawaii,HI,1415872,
+United States,New Hampshire,NH,1359711,
+United States,Maine,ME,1344212,
+United States,Montana,MT,1068778,
+United States,Rhode Island,RI,1059361,
+United States,Delaware,DE,973764,
+United States,South Dakota,SD,884659,
+United States,North Dakota,ND,762062,
+United States,Alaska,AK,731545,
+United States,District of Columbia,DC,705749,
+United States,Vermont,VT,623989,
+United States,Wyoming,WY,578759,
+United States,Guam,,165718,
+United States,U.S. Virgin Islands,,104914,
+United States,American Samoa,,55641,
+United States,Northern Mariana Islands,,55194,

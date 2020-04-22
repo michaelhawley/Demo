@@ -1,0 +1,251 @@
+CountryCode	CountryCodeLong	Region	Sub-region	Country
+AU	AUS	Oceania	Australia and New Zealand	Australia
+CX	CXR	Oceania	Australia and New Zealand	Christmas Island
+CC	CCK	Oceania	Australia and New Zealand	Cocos (Keeling) Islands
+HM	HMD	Oceania	Australia and New Zealand	Heard Island and McDonald Islands
+NZ	NZL	Oceania	Australia and New Zealand	New Zealand
+NF	NFK	Oceania	Australia and New Zealand	Norfolk Island
+FJ	FJI	Oceania	Melanesia	Fiji
+NC	NCL	Oceania	Melanesia	New Caledonia
+PG	PNG	Oceania	Melanesia	Papua New Guinea
+SB	SLB	Oceania	Melanesia	Solomon Islands
+VU	VUT	Oceania	Melanesia	Vanuatu
+GU	GUM	Oceania	Micronesia	Guam
+KI	KIR	Oceania	Micronesia	Kiribati
+MH	MHL	Oceania	Micronesia	Marshall Islands
+FM	FSM	Oceania	Micronesia	Micronesia (Federated States of)
+NR	NRU	Oceania	Micronesia	Nauru
+MP	MNP	Oceania	Micronesia	Northern Mariana Islands
+PW	PLW	Oceania	Micronesia	Palau
+UM	UMI	Oceania	Micronesia	United States Minor Outlying Islands
+AS	ASM	Oceania	Polynesia	American Samoa
+CK	COK	Oceania	Polynesia	Cook Islands
+PF	PYF	Oceania	Polynesia	French Polynesia
+NU	NIU	Oceania	Polynesia	Niue
+PN	PCN	Oceania	Polynesia	Pitcairn
+WS	WSM	Oceania	Polynesia	Samoa
+TK	TKL	Oceania	Polynesia	Tokelau
+TO	TON	Oceania	Polynesia	Tonga
+TV	TUV	Oceania	Polynesia	Tuvalu
+WF	WLF	Oceania	Polynesia	Wallis and Futuna
+BY	BLR	Europe	Eastern Europe	Belarus
+BG	BGR	Europe	Eastern Europe	Bulgaria
+CZ	CZE	Europe	Eastern Europe	Czechia
+HU	HUN	Europe	Eastern Europe	Hungary
+XK	XKX	Europe	Eastern Europe	Kosovo
+MD	MDA	Europe	Eastern Europe	Moldova (the Republic of)
+PL	POL	Europe	Eastern Europe	Poland
+RO	ROU	Europe	Eastern Europe	Romania
+RU	RUS	Europe	Eastern Europe	Russian Federation
+SK	SVK	Europe	Eastern Europe	Slovakia
+UA	UKR	Europe	Eastern Europe	Ukraine
+AX	ALA	Europe	Northern Europe	èAland Islands
+DK	DNK	Europe	Northern Europe	Denmark
+EE	EST	Europe	Northern Europe	Estonia
+FO	FRO	Europe	Northern Europe	Faroe Islands
+FI	FIN	Europe	Northern Europe	Finland
+GG	GGY	Europe	Northern Europe	Guernsey
+IS	ISL	Europe	Northern Europe	Iceland
+IE	IRL	Europe	Northern Europe	Ireland
+IM	IMN	Europe	Northern Europe	Isle of Man
+JE	JEY	Europe	Northern Europe	Jersey
+LV	LVA	Europe	Northern Europe	Latvia
+LT	LTU	Europe	Northern Europe	Lithuania
+NO	NOR	Europe	Northern Europe	Norway
+SJ	SJM	Europe	Northern Europe	Svalbard and Jan Mayen
+SE	SWE	Europe	Northern Europe	Sweden
+GB	GBR	Europe	Northern Europe	United Kingdom
+AL	ALB	Europe	Southern Europe	Albania
+AD	AND	Europe	Southern Europe	Andorra
+BA	BIH	Europe	Southern Europe	Bosnia and Herzegovina
+HR	HRV	Europe	Southern Europe	Croatia
+GI	GIB	Europe	Southern Europe	Gibraltar
+GR	GRC	Europe	Southern Europe	Greece
+VA	VAT	Europe	Southern Europe	Holy See
+IT	ITA	Europe	Southern Europe	Italy
+MT	MLT	Europe	Southern Europe	Malta
+ME	MNE	Europe	Southern Europe	Montenegro
+PT	PRT	Europe	Southern Europe	Portugal
+MK	MKD	Europe	Southern Europe	Republic of North Macedonia
+SM	SMR	Europe	Southern Europe	San Marino
+RS	SRB	Europe	Southern Europe	Serbia
+SI	SVN	Europe	Southern Europe	Slovenia
+ES	ESP	Europe	Southern Europe	Spain
+AT	AUT	Europe	Western Europe	Austria
+BE	BEL	Europe	Western Europe	Belgium
+FR	FRA	Europe	Western Europe	France
+DE	DEU	Europe	Western Europe	Germany
+LI	LIE	Europe	Western Europe	Liechtenstein
+LU	LUX	Europe	Western Europe	Luxembourg
+MC	MCO	Europe	Western Europe	Monaco
+NL	NLD	Europe	Western Europe	Netherlands
+CH	CHE	Europe	Western Europe	Switzerland
+KZ	KAZ	Asia	Central Asia	Kazakhstan
+KG	KGZ	Asia	Central Asia	Kyrgyzstan
+TJ	TJK	Asia	Central Asia	Tajikistan
+TM	TKM	Asia	Central Asia	Turkmenistan
+UZ	UZB	Asia	Central Asia	Uzbekistan
+CN	CHN	Asia	Eastern Asia	China
+HK	HKG	Asia	Eastern Asia	Hong Kong
+JP	JPN	Asia	Eastern Asia	Japan
+KP	PRK	Asia	Eastern Asia	Korea (the Democratic People's Republic of)
+KR	KOR	Asia	Eastern Asia	Korea (the Republic of)
+MO	MAC	Asia	Eastern Asia	Macao
+MN	MNG	Asia	Eastern Asia	Mongolia
+TW	TWN	Asia	Eastern Asia	Taiwan (Province of China)
+BN	BRN	Asia	South-eastern Asia	Brunei Darussalam
+KH	KHM	Asia	South-eastern Asia	Cambodia
+ID	IDN	Asia	South-eastern Asia	Indonesia
+LA	LAO	Asia	South-eastern Asia	Lao People's Democratic Republic
+MY	MYS	Asia	South-eastern Asia	Malaysia
+MM	MMR	Asia	South-eastern Asia	Myanmar
+PH	PHL	Asia	South-eastern Asia	Philippines
+SG	SGP	Asia	South-eastern Asia	Singapore
+TH	THA	Asia	South-eastern Asia	Thailand
+TL	TLS	Asia	South-eastern Asia	Timor-Leste
+VN	VNM	Asia	South-eastern Asia	Viet Nam
+AF	AFG	Asia	Southern Asia	Afghanistan
+BD	BGD	Asia	Southern Asia	Bangladesh
+BT	BTN	Asia	Southern Asia	Bhutan
+IN	IND	Asia	Southern Asia	India
+IR	IRN	Asia	Southern Asia	Iran (Islamic Republic of)
+MV	MDV	Asia	Southern Asia	Maldives
+NP	NPL	Asia	Southern Asia	Nepal
+PK	PAK	Asia	Southern Asia	Pakistan
+LK	LKA	Asia	Southern Asia	Sri Lanka
+AM	ARM	Asia	Western Asia	Armenia
+AZ	AZE	Asia	Western Asia	Azerbaijan
+BH	BHR	Asia	Western Asia	Bahrain
+CY	CYP	Asia	Western Asia	Cyprus
+GE	GEO	Asia	Western Asia	Georgia
+IQ	IRQ	Asia	Western Asia	Iraq
+IL	ISR	Asia	Western Asia	Israel
+JO	JOR	Asia	Western Asia	Jordan
+KW	KWT	Asia	Western Asia	Kuwait
+LB	LBN	Asia	Western Asia	Lebanon
+OM	OMN	Asia	Western Asia	Oman
+PS	PSE	Asia	Western Asia	"Palestine, State of"
+QA	QAT	Asia	Western Asia	Qatar
+SA	SAU	Asia	Western Asia	Saudi Arabia
+SY	SYR	Asia	Western Asia	Syrian Arab Republic
+TR	TUR	Asia	Western Asia	Turkey
+AE	ARE	Asia	Western Asia	United Arab Emirates
+YE	YEM	Asia	Western Asia	Yemen
+AI	AIA	Americas	Latin America and the Caribbean	Anguilla
+AG	ATG	Americas	Latin America and the Caribbean	Antigua and Barbuda
+AR	ARG	Americas	Latin America and the Caribbean	Argentina
+AW	ABW	Americas	Latin America and the Caribbean	Aruba
+BS	BHS	Americas	Latin America and the Caribbean	Bahamas
+BB	BRB	Americas	Latin America and the Caribbean	Barbados
+BZ	BLZ	Americas	Latin America and the Caribbean	Belize
+BO	BOL	Americas	Latin America and the Caribbean	Bolivia (Plurinational State of)
+BQ	BES	Americas	Latin America and the Caribbean	"Bonaire, Sint Eustatius and Saba"
+BV	BVT	Americas	Latin America and the Caribbean	Bouvet Island
+BR	BRA	Americas	Latin America and the Caribbean	Brazil
+KY	CYM	Americas	Latin America and the Caribbean	Cayman Islands
+CL	CHL	Americas	Latin America and the Caribbean	Chile
+CO	COL	Americas	Latin America and the Caribbean	Colombia
+CR	CRI	Americas	Latin America and the Caribbean	Costa Rica
+CU	CUB	Americas	Latin America and the Caribbean	Cuba
+CW	CUW	Americas	Latin America and the Caribbean	Curaáao
+DM	DMA	Americas	Latin America and the Caribbean	Dominica
+DO	DOM	Americas	Latin America and the Caribbean	Dominican Republic
+EC	ECU	Americas	Latin America and the Caribbean	Ecuador
+SV	SLV	Americas	Latin America and the Caribbean	El Salvador
+FK	FLK	Americas	Latin America and the Caribbean	Falkland Islands
+GF	GUF	Americas	Latin America and the Caribbean	French Guiana
+GD	GRD	Americas	Latin America and the Caribbean	Grenada
+GP	GLP	Americas	Latin America and the Caribbean	Guadeloupe
+GT	GTM	Americas	Latin America and the Caribbean	Guatemala
+GY	GUY	Americas	Latin America and the Caribbean	Guyana
+HT	HTI	Americas	Latin America and the Caribbean	Haiti
+HN	HND	Americas	Latin America and the Caribbean	Honduras
+JM	JAM	Americas	Latin America and the Caribbean	Jamaica
+MQ	MTQ	Americas	Latin America and the Caribbean	Martinique
+MX	MEX	Americas	Latin America and the Caribbean	Mexico
+MS	MSR	Americas	Latin America and the Caribbean	Montserrat
+NI	NIC	Americas	Latin America and the Caribbean	Nicaragua
+PA	PAN	Americas	Latin America and the Caribbean	Panama
+PY	PRY	Americas	Latin America and the Caribbean	Paraguay
+PE	PER	Americas	Latin America and the Caribbean	Peru
+PR	PRI	Americas	Latin America and the Caribbean	Puerto Rico
+BL	BLM	Americas	Latin America and the Caribbean	Saint BarthÇlemy
+KN	KNA	Americas	Latin America and the Caribbean	Saint Kitts and Nevis
+LC	LCA	Americas	Latin America and the Caribbean	Saint Lucia
+MF	MAF	Americas	Latin America and the Caribbean	Saint Martin (French part)
+VC	VCT	Americas	Latin America and the Caribbean	Saint Vincent and the Grenadines
+SX	SXM	Americas	Latin America and the Caribbean	Sint Maarten (Dutch part)
+GS	SGS	Americas	Latin America and the Caribbean	South Georgia and the South Sandwich Islands
+SR	SUR	Americas	Latin America and the Caribbean	Suriname
+TT	TTO	Americas	Latin America and the Caribbean	Trinidad and Tobago
+TC	TCA	Americas	Latin America and the Caribbean	Turks and Caicos Islands
+UY	URY	Americas	Latin America and the Caribbean	Uruguay
+VE	VEN	Americas	Latin America and the Caribbean	Venezuela (Bolivarian Republic of)
+VG	VGB	Americas	Latin America and the Caribbean	Virgin Islands (British)
+VI	VIR	Americas	Latin America and the Caribbean	Virgin Islands (U.S.)
+BM	BMU	Americas	Northern America	Bermuda
+CA	CAN	Americas	Northern America	Canada
+GL	GRL	Americas	Northern America	Greenland
+PM	SPM	Americas	Northern America	Saint Pierre and Miquelon
+US	USA	Americas	Northern America	United States of America
+DZ	DZA	Africa	Northern Africa	Algeria
+EG	EGY	Africa	Northern Africa	Egypt
+LY	LBY	Africa	Northern Africa	Libya
+MA	MAR	Africa	Northern Africa	Morocco
+SD	SDN	Africa	Northern Africa	Sudan
+TN	TUN	Africa	Northern Africa	Tunisia
+EH	ESH	Africa	Northern Africa	Western Sahara
+AO	AGO	Africa	Sub-Saharan Africa	Angola
+BJ	BEN	Africa	Sub-Saharan Africa	Benin
+BW	BWA	Africa	Sub-Saharan Africa	Botswana
+IO	IOT	Africa	Sub-Saharan Africa	British Indian Ocean Territory
+BF	BFA	Africa	Sub-Saharan Africa	Burkina Faso
+BI	BDI	Africa	Sub-Saharan Africa	Burundi
+CV	CPV	Africa	Sub-Saharan Africa	Cabo Verde
+CM	CMR	Africa	Sub-Saharan Africa	Cameroon
+CF	CAF	Africa	Sub-Saharan Africa	Central African Republic
+TD	TCD	Africa	Sub-Saharan Africa	Chad
+KM	COM	Africa	Sub-Saharan Africa	Comoros
+CG	COG	Africa	Sub-Saharan Africa	Congo
+CD	COD	Africa	Sub-Saharan Africa	Congo (the Democratic Republic of the)
+CI	CIV	Africa	Sub-Saharan Africa	Cote d'Ivoire
+DJ	DJI	Africa	Sub-Saharan Africa	Djibouti
+GQ	GNQ	Africa	Sub-Saharan Africa	Equatorial Guinea
+ER	ERI	Africa	Sub-Saharan Africa	Eritrea
+SZ	SWZ	Africa	Sub-Saharan Africa	Eswatini
+ET	ETH	Africa	Sub-Saharan Africa	Ethiopia
+TF	ATF	Africa	Sub-Saharan Africa	French Southern Territories
+GA	GAB	Africa	Sub-Saharan Africa	Gabon
+GM	GMB	Africa	Sub-Saharan Africa	Gambia
+GH	GHA	Africa	Sub-Saharan Africa	Ghana
+GN	GIN	Africa	Sub-Saharan Africa	Guinea
+GW	GNB	Africa	Sub-Saharan Africa	Guinea-Bissau
+KE	KEN	Africa	Sub-Saharan Africa	Kenya
+LS	LSO	Africa	Sub-Saharan Africa	Lesotho
+LR	LBR	Africa	Sub-Saharan Africa	Liberia
+MG	MDG	Africa	Sub-Saharan Africa	Madagascar
+MW	MWI	Africa	Sub-Saharan Africa	Malawi
+ML	MLI	Africa	Sub-Saharan Africa	Mali
+MR	MRT	Africa	Sub-Saharan Africa	Mauritania
+MU	MUS	Africa	Sub-Saharan Africa	Mauritius
+YT	MYT	Africa	Sub-Saharan Africa	Mayotte
+MZ	MOZ	Africa	Sub-Saharan Africa	Mozambique
+NA	NAM	Africa	Sub-Saharan Africa	Namibia
+NE	NER	Africa	Sub-Saharan Africa	Niger
+NG	NGA	Africa	Sub-Saharan Africa	Nigeria
+RE	REU	Africa	Sub-Saharan Africa	RÇunion
+RW	RWA	Africa	Sub-Saharan Africa	Rwanda
+SH	SHN	Africa	Sub-Saharan Africa	"Saint Helena, Ascension and Tristan da Cunha"
+ST	STP	Africa	Sub-Saharan Africa	Sao Tome and Principe
+SN	SEN	Africa	Sub-Saharan Africa	Senegal
+SC	SYC	Africa	Sub-Saharan Africa	Seychelles
+SL	SLE	Africa	Sub-Saharan Africa	Sierra Leone
+SO	SOM	Africa	Sub-Saharan Africa	Somalia
+ZA	ZAF	Africa	Sub-Saharan Africa	South Africa
+SS	SSD	Africa	Sub-Saharan Africa	South Sudan
+TZ	TZA	Africa	Sub-Saharan Africa	"Tanzania, United Republic of"
+TG	TGO	Africa	Sub-Saharan Africa	Togo
+UG	UGA	Africa	Sub-Saharan Africa	Uganda
+ZM	ZMB	Africa	Sub-Saharan Africa	Zambia
+ZW	ZWE	Africa	Sub-Saharan Africa	Zimbabwe
+AQ	ATA			Antarctica

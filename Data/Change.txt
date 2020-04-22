@@ -1,0 +1,9 @@
+Original	Switch
+Burma	Myanmar
+Congo (Brazzaville)	Republic of the Congo
+US	United States of America
+Vietnam	Viet Nam
+Burma	Myanmar
+Taiwan*	Taiwan
+Korea, South	South Korea
+Congo (Kinshasa)	Democratic Republic of the Congo

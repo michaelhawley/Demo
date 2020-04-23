@@ -3,9 +3,10 @@
 This is a quick demonstration of some simple tools I use in my work.
 I'm making this demo while between jobs during lockdown. 
 
-Here I'm demonstrating 4 keys skills.
+Here I'm demonstrating 5 keys skills.
 - Slide Decks / Business Cases
 - R 
+- Excel
 - Python
 - SQL
 
@@ -27,7 +28,19 @@ Generally I prefer to use Excel. Where possible models should be kept as simple 
 Some projects require some more robust analysis and visualisation. Here I'm taking some free COVID19 datasets and begining to put some graphs to them
 This is still very much a work in progress as I play around with different graphs. 
 
-![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/R/graphs/CovidGif.gif)
+## Excel Bank Structures
+https://github.com/michaelhawley/Demo/tree/master/Excel
+
+While I love Pivot tables and Index Matches etc. I'd rather show you something that a lot of Excel Wizards don't know. 
+Adding text as a measure to a pivot table!  
+![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/Excel/BankStructure.PNG)
+Here I'm using it to make a bank structure diagram to add to slide packs. A bank structure shows the waves of flying in and out of an airport with the top being Arriving flights and the bottom being departing flights.
+The data is added in the next sheet, pivoted, and then the text added as a measure. The cells are then formatted with conditional formatting looked up from the table below. 
+
+Here is the same sheet making a bank structure for Dubai
+
+![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/Excel/DXB%20Bank%20Structure.PNG)
+
 
 ## Python - QV Webscrape
 https://github.com/michaelhawley/Demo/tree/master/Python

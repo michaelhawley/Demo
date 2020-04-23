@@ -101,12 +101,12 @@ OData$D_Cases <- pull(split(OData,OData$Cn_Pr) %>%  #pull the first and only lin
                    }
                    data.frame(Deltas)
                  }) %>% bind_rows)
-Data[which(is.nan(Data$D_Cases) & Data$Cases == 0),'D'] = 0
-Data[which(is.na(Data$D_Cases) & Data$Cases == 0),'D'] = 0
-Data[which(Data$D_Cases == -Inf | Data$D_Cases == Inf),'D'] = 0 
+OData[which(is.nan(OData$D_Cases) & OData$Cases == 0),'D'] = 0
+OData[which(is.na(OData$D_Cases) & OData$Cases == 0),'D'] = 0
+OData[which(OData$D_Cases == -Inf | OData$D_Cases == Inf),'D'] = 0 
 
 # Deaths
-Data$D_Deaths <- pull(split(Data,Data$Cn_Pr) %>%  #pull the first and only line of data back
+OData$D_Deaths <- pull(split(OData,OData$Cn_Pr) %>%  #pull the first and only line of data back
                  lapply(function(i){
                    Nr = nrow(i)               
                    Deltas = vector(length=Nr)
@@ -125,15 +125,15 @@ Data$D_Deaths <- pull(split(Data,Data$Cn_Pr) %>%  #pull the first and only line 
                    }
                    data.frame(Deltas)
                  }) %>% bind_rows)
-Data[which(is.nan(Data$D_Deaths) & Data$Deaths == 0),'D'] = 0
-Data[which(is.na(Data$D_Deaths) & Data$Deaths == 0),'D'] = 0
-Data[which(Data$D_Deaths == -Inf | Data$D_Deaths == Inf),'D'] = 0 
+OData[which(is.nan(OData$D_Deaths) & OData$Deaths == 0),'D'] = 0
+OData[which(is.na(OData$D_Deaths)  & OData$Deaths == 0),'D'] = 0
+OData[which(OData$D_Deaths == -Inf | OData$D_Deaths == Inf),'D'] = 0 
 
 
          
             
        
-US1 <- Data[which(Data$Cn_Pr %in% USStates[1:20]),]
+US1 <- OData[which(OData$Cn_Pr %in% USStates[1:20]),]
 # After running the graph again looking for 3SD's, ther are no unusual observations that are not counter weighted by another
 graphOutliers(d = US1, SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'CasesPC', Nr = 5,Nc = 4, LimX= 35, sd = 3 , Dx = 'D_Cases' )
 # only at 1 SD to we get results
@@ -145,38 +145,38 @@ graphOutliers(d = US1, SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'CasesPC', 
 
 #Lets go through each area of the world
 # DETAIL 
-        Latin <- (unique(Data[which(Data$Sub.region == "Latin America and the Caribbean"),"Cn_Pr"]))
-        SubA <- (unique(Data[which(Data$Sub.region == "Sub-Saharan Africa"),"Cn_Pr"]))
-        ChinaProv <- (unique(Data[which(Data$Country == "China"),"Cn_Pr"]))
+        Latin     <- (unique(OData[which(OData$Sub.region == "Latin America and the Caribbean"),"Cn_Pr"]))
+        SubA      <- (unique(OData[which(OData$Sub.region == "Sub-Saharan Africa"),"Cn_Pr"]))
+        ChinaProv <- (unique(OData[which(OData$Country == "China"),"Cn_Pr"]))
         
-        graphOutliers(d = Data[which(Data$Cn_Pr %in% USStates[ 0:20]),], SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 5,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Cases' )
-        graphOutliers(d = Data[which(Data$Cn_Pr %in% USStates[21:40]),]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 5,Nc = 4, LimX= 60, sd = 3 ,Dx = 'D_Cases'  )
-        graphOutliers(d = Data[which(Data$Cn_Pr %in% USStates[41:55]),]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3 ,Dx = 'D_Cases'  )
-        graphOutliers(d = Data[which(Data$Country == "Canada") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 3, LimX= 60, sd = 3  ,Dx = 'D_Cases')
+        graphOutliers(d = OData[which(OData$Cn_Pr %in% USStates[ 0:20]),], SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 5,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Cases' )
+        graphOutliers(d = OData[which(OData$Cn_Pr %in% USStates[21:40]),]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 5,Nc = 4, LimX= 60, sd = 3 ,Dx = 'D_Cases'  )
+        graphOutliers(d = OData[which(OData$Cn_Pr %in% USStates[41:55]),]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3 ,Dx = 'D_Cases'  )
+        graphOutliers(d = OData[which(OData$Country == "Canada") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 3, LimX= 60, sd = 3  ,Dx = 'D_Cases')
         
-        graphOutliers(d = Data[which(Data$Sub.region == "Australia and New Zealand") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Cases')
-        graphOutliers(d = Data[which(Data$Sub.region == "Southern Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Cases')
-        graphOutliers(d = Data[which(Data$Sub.region == "Northern Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Cases')
-        graphOutliers(d = Data[which(Data$Sub.region == "Western Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Cases')
+        graphOutliers(d = OData[which(OData$Sub.region == "Australia and New Zealand") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Cases')
+        graphOutliers(d = OData[which(OData$Sub.region == "Southern Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Cases')
+        graphOutliers(d = OData[which(OData$Sub.region == "Northern Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Cases')
+        graphOutliers(d = OData[which(OData$Sub.region == "Western Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Cases')
         
-        graphOutliers(d = Data[which(Data$Cn_Pr %in% ChinaProv[1:16]) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Cases')
-        graphOutliers(d = Data[which(Data$Cn_Pr %in% ChinaProv[17:32]) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Cases')
+        graphOutliers(d = OData[which(OData$Cn_Pr %in% ChinaProv[1:16]) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Cases')
+        graphOutliers(d = OData[which(OData$Cn_Pr %in% ChinaProv[17:32]) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Cases')
         
-        graphOutliers(d = Data[which(Data$Sub.region == "Southern Asia" |Data$Sub.region == "South-eastern Asia" | Data$Sub.region == "Eastern Asia" & Data$Country != "China" ),]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 5, LimX= 60, sd = 3 , Dx = 'D_Cases' )
-        graphOutliers(d = Data[which(Data$Sub.region == "Central Asia" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 2,Nc = 2, LimX= 60, sd = 3 , Dx = 'D_Cases' )
-        graphOutliers(d = Data[which(Data$Sub.region == "Western Asia" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3, Dx = 'D_Cases'  )
+        graphOutliers(d = OData[which(OData$Sub.region == "Southern Asia" |OData$Sub.region == "South-eastern Asia" | OData$Sub.region == "Eastern Asia" & OData$Country != "China" ),]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 5, LimX= 60, sd = 3 , Dx = 'D_Cases' )
+        graphOutliers(d = OData[which(OData$Sub.region == "Central Asia" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 2,Nc = 2, LimX= 60, sd = 3 , Dx = 'D_Cases' )
+        graphOutliers(d = OData[which(OData$Sub.region == "Western Asia" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 4, LimX= 60, sd = 3, Dx = 'D_Cases'  )
         
-        graphOutliers(d = Data[which(Data$Cn_Pr %in%  Latin[1:10] ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Cases' )
-        graphOutliers(d = Data[which(Data$Cn_Pr %in%  Latin[11:20] ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Cases' )
+        graphOutliers(d = OData[which(OData$Cn_Pr %in%  Latin[1:10] ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Cases' )
+        graphOutliers(d = OData[which(OData$Cn_Pr %in%  Latin[11:20] ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Cases' )
         
-        graphOutliers(d = Data[which(Data$Sub.region == "Northern Africa" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 2, LimX= 45, sd = 3  , Dx = 'D_Cases')
-        graphOutliers(d = Data[which(Data$Cn_Pr %in%  SubA[1:12]  ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Cases' )
-        graphOutliers(d = Data[which(Data$Cn_Pr %in%  SubA[13:24]  ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Cases' )
+        graphOutliers(d = OData[which(OData$Sub.region == "Northern Africa" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 2, LimX= 45, sd = 3  , Dx = 'D_Cases')
+        graphOutliers(d = OData[which(OData$Cn_Pr %in%  SubA[1:12]  ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Cases' )
+        graphOutliers(d = OData[which(OData$Cn_Pr %in%  SubA[13:24]  ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Cases' )
         
 # Summary       
 outliers <- c('Hubei, China','Texas, United States','Ohio, United States ','Thailand','Pakistan','France','Morocco','Ecuador','Singapore')
-graphOutliers(d = Data[which(Data$Cn_Pr %in%  outliers) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 3, LimX= 60, sd = 3, Dx = 'D_Cases'  )
-view(Data[which(Data$Cn_Pr %in%  outliers & Data$D>3) ,])
+graphOutliers(d = OData[which(OData$Cn_Pr %in%  outliers) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 3, LimX= 60, sd = 2.8, Dx = 'D_Cases'  )
+
 
 #Ecuador No reason given http://www.xinhuanet.com/english/2020-04/11/c_138965712.htm
 #France - Nursing homes included  https://www.reuters.com/article/us-health-coronavirus-france-toll/french-coronavirus-cases-jump-above-chinas-after-including-nursing-home-tally-idUSKBN21L3BG
@@ -189,42 +189,42 @@ view(Data[which(Data$Cn_Pr %in%  outliers & Data$D>3) ,])
 
 #Lets go through each area of the world
 # DETAIL 
-      Latin <- (unique(Data[which(Data$Sub.region == "Latin America and the Caribbean"),"Cn_Pr"]))
-      SubA <- (unique(Data[which(Data$Sub.region == "Sub-Saharan Africa"),"Cn_Pr"]))
-      ChinaProv <- (unique(Data[which(Data$Country == "China"),"Cn_Pr"]))
+      Latin <- (unique(OData[which(OData$Sub.region == "Latin America and the Caribbean"),"Cn_Pr"]))
+      SubA <- (unique(OData[which(OData$Sub.region == "Sub-Saharan Africa"),"Cn_Pr"]))
+      ChinaProv <- (unique(OData[which(OData$Country == "China"),"Cn_Pr"]))
       
-      graphOutliers(d = Data[which(Data$Cn_Pr %in% USStates[  0:12]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths')
-      graphOutliers(d = Data[which(Data$Cn_Pr %in% USStates[ 13:24]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths')
-      graphOutliers(d = Data[which(Data$Cn_Pr %in% USStates[ 25:36]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
-      graphOutliers(d = Data[which(Data$Cn_Pr %in% USStates[ 37:48]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
-      graphOutliers(d = Data[which(Data$Cn_Pr %in% USStates[ 49:55]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Cn_Pr %in% USStates[  0:12]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Cn_Pr %in% USStates[ 13:24]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Cn_Pr %in% USStates[ 25:36]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Cn_Pr %in% USStates[ 37:48]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Cn_Pr %in% USStates[ 49:55]),], SplitOn = 'Cn_Pr', XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths')
       
-      graphOutliers(d = Data[which(Data$Country == "Canada") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 3,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Country == "Canada") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 3,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Deaths')
       
-      graphOutliers(d = Data[which(Data$Sub.region == "Australia and New Zealand") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 3,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
-      graphOutliers(d = Data[which(Data$Sub.region == "Southern Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
-      graphOutliers(d = Data[which(Data$Sub.region == "Northern Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
-      graphOutliers(d = Data[which(Data$Sub.region == "Western Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Sub.region == "Australia and New Zealand") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 3,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Sub.region == "Southern Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Sub.region == "Northern Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Sub.region == "Western Europe") ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Deaths')
       
-      graphOutliers(d = Data[which(Data$Cn_Pr %in% ChinaProv[1:16]) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Deaths')
-      graphOutliers(d = Data[which(Data$Cn_Pr %in% ChinaProv[17:32]) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Cn_Pr %in% ChinaProv[1:16]) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Cn_Pr %in% ChinaProv[17:32]) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Deaths')
       
-      graphOutliers(d = Data[which(Data$Sub.region == "Southern Asia" |Data$Sub.region == "South-eastern Asia" | Data$Sub.region == "Eastern Asia" & Data$Country != "China" ),]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 5, LimX= 60, sd = 3  , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Sub.region == "Southern Asia" |OData$Sub.region == "South-eastern Asia" | OData$Sub.region == "Eastern Asia" & OData$Country != "China" ),]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 5, LimX= 60, sd = 3  , Dx = 'D_Deaths')
       
-      graphOutliers(d = Data[which(Data$Sub.region == "Central Asia" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 2,Nc = 2, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
-      graphOutliers(d = Data[which(Data$Sub.region == "Western Asia" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Sub.region == "Central Asia" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 2,Nc = 2, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Sub.region == "Western Asia" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 4, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
       
-      graphOutliers(d = Data[which(Data$Cn_Pr %in%  Latin[1:10] ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
-      graphOutliers(d = Data[which(Data$Cn_Pr %in%  Latin[11:20] ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Cn_Pr %in%  Latin[1:10] ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Cn_Pr %in%  Latin[11:20] ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3 , Dx = 'D_Deaths' )
       
-      graphOutliers(d = Data[which(Data$Sub.region == "Northern Africa" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 3,Nc = 2, LimX= 45, sd = 3 , Dx = 'D_Deaths' )
-      graphOutliers(d = Data[which(Data$Cn_Pr %in%  SubA[1:12]  ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 3,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Deaths')
-      graphOutliers(d = Data[which(Data$Cn_Pr %in%  SubA[13:24]  ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Sub.region == "Northern Africa" ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 3,Nc = 2, LimX= 45, sd = 3 , Dx = 'D_Deaths' )
+      graphOutliers(d = OData[which(OData$Cn_Pr %in%  SubA[1:12]  ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 3,Nc = 4, LimX= 60, sd = 3  , Dx = 'D_Deaths')
+      graphOutliers(d = OData[which(OData$Cn_Pr %in%  SubA[13:24]  ) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 4,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Deaths')
 
 # Summary       
-outliers <- c('Hubei, China','Texas, United States','Ohio, United States ','Thailand','Pakistan','France','Morocco','Ecuador','Singapore')
-graphOutliers(d = Data[which(Data$Cn_Pr %in%  outliers) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Cases', Nr = 3,Nc = 3, LimX= 60, sd = 3  , Dx = 'D_Deaths')
-view(Data[which(Data$Cn_Pr %in%  outliers & Data$D_Deaths>3) ,])
+outliers <- c('Hubei, China','France')
+graphOutliers(d = OData[which(OData$Cn_Pr %in%  outliers) ,]   , SplitOn = 'Cn_Pr',  XAxis = 'StDays', YAxis = 'Deaths', Nr = 2,Nc = 1, LimX= 90, sd = 3  , Dx = 'D_Deaths')
+
 
 #Ecuador No reason given http://www.xinhuanet.com/english/2020-04/11/c_138965712.htm
 #France - Nursing homes included  https://www.reuters.com/article/us-health-coronavirus-france-toll/french-coronavirus-cases-jump-above-chinas-after-including-nursing-home-tally-idUSKBN21L3BG
@@ -234,5 +234,4 @@ view(Data[which(Data$Cn_Pr %in%  outliers & Data$D_Deaths>3) ,])
 #Singapore - no reason given https://www.straitstimes.com/singapore/singapore-coronavirus-cases-cross-4000-with-728-cases-in-new-daily-record
 # Texas - no reason
 #Thailand no reason
-
 

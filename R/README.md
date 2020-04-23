@@ -5,6 +5,9 @@ This is me playing around with freely available Coronavirus data during my free 
  - Ease_Functions: I have added two functions for faster labeling and graphing which the following files rely on
  - Covid19_Outliers:  Shows why these observations are identified as being incorrect (Seperate folder)
  
+ Note:  This is ** NOT ** the most 'robust' analysis.  I've done this quickly, partially as a demonstration that I can use R and partially because this is a really interesting topic. 
+If this was a role, I'd have to be slightly more formal with some of this code and take more than an hour to check the quality of the data.  Many of the graphs lead me to question these numbers.  The wildly different mortality rate data so far suggests that either there's some massive healthcare or genetic differences between neighbouring countries.. or (much more likely) deaths and case numbers are massively inaccurate, with both sets up numbers likely underestimated by a large margin.  
+ 
 ## Mortality rate
 ![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/R/graphs/CovidGif.gif)
 
@@ -19,6 +22,13 @@ It is clear that deaths lag cases, so potentially with more time and more data t
  ![Gif](https://github.com/michaelhawley/Demo/blob/master/R/graphs/Graph2.png)
  
  Looking at Belgium and Switzerland for example.  Both have relatively similar levels of healthcare, similar ethincity and similar number of cases per million people suggesting that their hospitals should be at similar levels of strain. But Belgium is reporing a lot more deaths per people.  Something isn't right here. 
+ 
+  
+## Outliers
+It's worth nothing that there's some very large outliers in this data.  A quick graph shows that there's some huge spikes in some days and next to no cases the day before. While the deaths per day are somewhat more steady, cases per day show a large variablity likley due to processing time rather than infection rates. 
+I smoothed some outliers in this data, as noted in the outliers folder. 
+![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/R/outliers/graphs/Initial_Graph.png)
+ 
  
 
 ## Most affected areas

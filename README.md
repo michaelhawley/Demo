@@ -7,7 +7,9 @@ I'm making this demo while between jobs during lockdown.
 https://github.com/michaelhawley/Demo/blob/master/Powerpoint/Sales%20Meeting%20-%20Insights%20Example.pdf
 ![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/Powerpoint/Example%20Slide.png)
 I've done a lot of modelling in Excel and a lot of business case slide decks, unfortunately they nearly all contain senstive information or strategy type infomation that can't be shared. 
-Instead I've chosen an insights pack delivered to the Sales team of American Airlines post the announcement of Auckland-Dallas. The target audience is the Sales team(not the more numbers orientated Network Planning team)
+
+Instead I've chosen an insights pack delivered to the Sales team of American Airlines post the announcement of Auckland-Dallas. The target audience is the Sales team with the more numbers orientated Network Planning team not attending.
+
 While it's not the complete pack, the chosen slides are a good example of the type of packs I make. These slides contain no information that isn't freely available from StatsNZ or other sources. 
 
 ## R - COVID19

@@ -13,7 +13,7 @@ Here I'm demonstrating 5 keys skills.
 ## Business Cases
 https://github.com/michaelhawley/Demo/blob/master/Powerpoint/Sales%20Meeting%20-%20Insights%20Example.pdf
 ![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/Powerpoint/Example%20Slide.png)
-I've done a lot of modelling in Excel and a lot of business case slide decks, unfortunately they nearly all contain senstive information or strategy type infomation that can't be shared. 
+I've done a lot of modelling in Excel and a lot of business case slide decks, unfortunately they nearly all contain sensitive information or strategy type information that can't be shared. 
 
 Instead I've chosen an insights pack delivered to the Sales team of American Airlines post the announcement of Auckland-Dallas. The target audience is the Sales team with the more numbers orientated Network Planning team not attending.
 
@@ -25,9 +25,9 @@ https://github.com/michaelhawley/Demo/tree/master/R
 ![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/R/graphs/CovidGif.gif)
 
 After using R extensively during University, I've used it sparely since. 
-Generally I prefer to use Excel. Where possible models should be kept as simple as possible. Excel is easy to share and explain.  
+Generally, I prefer to use Excel. Where possible models should be kept as simple as possible. Excel is easy to share and explain. 
 
-Some projects require some more robust analysis and visualisation. Here I'm taking some free COVID19 datasets and begining to put some graphs to them
+Some projects require some more robust analysis and visualisation. Here I'm taking some free COVID19 datasets and beginning to put some graphs to them.
 This is still very much a work in progress as I play around with different graphs. 
 
 ## Excel Bank Structures

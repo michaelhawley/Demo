@@ -1,7 +1,13 @@
 # Demonstration material
-https://github.com/michaelhawley/Demo/tree/master/R
+
 This is a quick demonstration of some simple tools I use in my work.
 I'm making this demo while between jobs during lockdown. 
+
+Here I'm demonstrating 4 keys skills.
+- Slide Decks / Business Cases
+- R 
+- Python
+- SQL
 
 ## Business Cases
 https://github.com/michaelhawley/Demo/blob/master/Powerpoint/Sales%20Meeting%20-%20Insights%20Example.pdf

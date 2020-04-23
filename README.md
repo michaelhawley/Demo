@@ -22,6 +22,8 @@ While it's not the complete pack, the chosen slides are a good example of the ty
 ## R - COVID19
 https://github.com/michaelhawley/Demo/tree/master/R
 
+![Gif](https://raw.githubusercontent.com/michaelhawley/Demo/master/R/graphs/CovidGif.gif)
+
 After using R extensively during University, I've used it sparely since. 
 Generally I prefer to use Excel. Where possible models should be kept as simple as possible. Excel is easy to share and explain.  
 
